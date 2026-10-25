@@ -1,0 +1,33 @@
+:root {
+  /* Layout */
+  --page-width: 1440px;
+  --page-gutter: 120px;      /* outer content edge */
+  --content-width: 1200px;
+  --column-inset: 222px;     /* narrative column left edge */
+  --column-width: 996px;
+  --band-inset-x: 52px;      /* framed band inner box */
+  --band-inset-y: 67px;
+
+  /* Spacing steps seen in auto-layout */
+  --space-1: 6px;  --space-2: 10px; --space-3: 12px; --space-4: 16px;
+  --space-5: 28px; --space-6: 32px; --space-7: 46px; --space-8: 48px;
+  --space-section: 160px;
+
+  /* Pixel grid — the brand motif */
+  --pixel: 8px;
+  --pixel-half: 4px;
+  --block: 96px;
+  --block-gap: 7px;
+
+  /* Radii — nearly square everywhere */
+  --radius-none: 0;
+  --radius-hair: 1px;        /* tags, blocks */
+  --radius-btn-sm: 5px;
+  --radius-btn: 10px;
+  --radius-phone: 24.89px;
+
+  /* Strokes — no drop shadows in the system */
+  --stroke-tag: 1.5px;
+  --stroke-hair: 1px;
+  --phone-ring: 22px;
+}

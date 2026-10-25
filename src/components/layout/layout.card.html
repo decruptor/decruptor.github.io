@@ -1,0 +1,19 @@
+<!-- @dsCard group="Components" viewport="700x330" name="Layout" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script src="../../ds-loader.js"></script></head>
+<body style="margin:0;background:var(--bg-page);padding:28px;box-sizing:border-box"><div id="root"></div>
+<script type="text/babel">
+const NS = window.DS;
+const { Band, Button } = NS;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <div style={{margin:-28}}>
+    <Band tone="violet" style={{padding:'28px 24px'}} innerStyle={{padding:'36px 40px',display:'flex',flexDirection:'column',gap:28,alignItems:'flex-start'}}>
+      <p style={{margin:0,fontFamily:'var(--font-sans)',fontSize:24,lineHeight:1.3,color:'var(--ink-900)'}}>We do not offer services through this site. We never message anyone first.</p>
+      <Button>Read the scam checklist</Button>
+    </Band>
+  </div>);
+</script></body></html>

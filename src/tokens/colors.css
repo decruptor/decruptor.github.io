@@ -1,0 +1,60 @@
+:root {
+  /* Violet — primary brand */
+  --violet-500: #6131FF;   /* rgb(97,49,255)  — hero type, mark, active blocks */
+  --violet-700: #6F00DB;   /* rgb(111,0,219)  — badge text */
+  --violet-200: #C7C3FF;   /* rgb(199,195,255) — bands, empty blocks, skyline */
+  --violet-50:  #F4F3FF;   /* rgb(244,243,255) — tint panels, footer, badges */
+
+  /* Ink — text + primary action */
+  --ink-900: #110048;      /* rgb(17,0,72) */
+  --ink-60: rgba(17,0,72,0.6);
+  --ink-40: rgba(17,0,72,0.4);
+  --ink-20: rgba(17,0,72,0.2);
+  --navy-900: #00184B;     /* rgb(0,24,75)  — palette alt dark */
+  --navy-950: #011F34;     /* rgb(1,31,52)  — palette alt dark */
+
+  /* Teal — data, verification, positive */
+  --teal-700: #007976;     /* rgb(0,121,118) — step indices, pixel progress */
+  --teal-600: #02918E;     /* rgb(2,145,142) — readouts, teal button */
+  --teal-200: #B2D7D6;     /* rgb(178,215,214) — teal hairlines */
+  --teal-150: #C7E2E1;     /* rgb(199,226,225) — progress track */
+  --teal-100: #AEF0EE;     /* rgb(174,240,238) — teal band + skyline */
+
+  /* Blue — tags / links */
+  --blue-600: #054AE2;     /* rgb(5,74,226) */
+  --blue-300: #88ADFF;     /* rgb(136,173,255) */
+
+  /* Neutrals */
+  --mute-400: #9D96B3;     /* rgb(157,150,179) — eyebrow / tagline */
+  --gray-300: #D9D9D9;
+  --paper: #FAFAFA;        /* page background */
+  --white: #FFFFFF;
+
+  /* Signal (annotation only in source) */
+  --signal-red: #FF1D1D;
+  --signal-yellow: #FFCE1F;
+
+  /* Semantic aliases */
+  --bg-page: var(--paper);
+  --bg-surface: var(--white);
+  --bg-tint: var(--violet-50);
+  --bg-band-violet: var(--violet-200);
+  --bg-band-teal: var(--teal-100);
+  --text-primary: var(--ink-900);
+  --text-secondary: var(--ink-60);
+  --text-tertiary: var(--ink-40);
+  --text-eyebrow: var(--mute-400);
+  --text-accent: var(--violet-500);
+  --text-data: var(--teal-600);
+  --text-index: var(--teal-700);
+  --text-link: var(--blue-600);
+  --text-on-fill: var(--white);
+  --action-primary: var(--ink-900);
+  --action-accent: var(--violet-500);
+  --action-positive: var(--teal-600);
+  --action-link: var(--blue-600);
+  --border-tag: var(--blue-300);
+  --border-hairline: var(--ink-20);
+  --status-solved: var(--teal-700);
+  --status-progress: var(--violet-500);
+}

@@ -1,0 +1,20 @@
+:root {
+  --font-display: "Funnel Display", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Funnel Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-data: "Space Grotesk", ui-monospace, "Helvetica Neue", sans-serif;
+
+  /* Scale — exact values from the Figma "Wireframe - 1" frame */
+  --fs-section: 80px;  --lh-section: 1.1;   --ls-section: 0.01em;   /* Funnel Display 500 */
+  --fs-hero: 70px;     --lh-hero: 75px;     --ls-hero: 0.01em;      /* Funnel Display 500, violet */
+  --fs-stat: 46px;     --lh-stat: 1.2;                              /* Funnel Display 500 */
+  --fs-h3: 32px;       --lh-h3: 1.2;                                /* Funnel Display 500 */
+  --fs-h4: 24px;       --lh-h4: 1.2;                                /* Funnel Display 600 */
+  --fs-lead: 32px;     --lh-lead: 1.3;                              /* Funnel Sans 400 */
+  --fs-body: 20px;     --lh-body: 1.46;     --lh-body-tight: 1.2;   /* Funnel Sans 400 */
+  --fs-label: 20px;    --lh-label: 1;       --ls-label: 0.03em;     /* Funnel Sans 500 uppercase */
+  --fs-button: 20px;                                                 /* Funnel Sans 500 uppercase */
+  --fs-micro: 12px;    --lh-micro: 16px;    --ls-micro: 0.05em;     /* Funnel Sans / Space Grotesk 500 uppercase */
+  --fs-tag: 20px;      --ls-tag: 0.05em;                            /* Space Grotesk 500 uppercase */
+  --fs-logo: 41.07px;  --ls-logo: 0.02em;                           /* Funnel Display 800 uppercase */
+  --fs-logo-xl: 97.96px;
+}

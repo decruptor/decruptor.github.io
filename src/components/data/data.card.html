@@ -1,0 +1,28 @@
+<!-- @dsCard group="Components" viewport="700x440" name="Data" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script src="../../ds-loader.js"></script></head>
+<body style="margin:0;background:var(--bg-page);padding:28px;box-sizing:border-box"><div id="root"></div>
+<script type="text/babel">
+const NS = window.DS;
+const { PixelProgress, ProgressBar, BlockRow, DataReadout } = NS;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <div style={{display:'flex',flexDirection:'column',gap:28}}>
+    <BlockRow count={6} size={88} gap={7} filled={[0]} />
+    <div style={{display:'flex',gap:40,alignItems:'flex-start',flexWrap:'wrap'}}>
+      <PixelProgress value={0.33} label="Blocks completed: 33%" />
+      <div style={{display:'flex',flexDirection:'column',gap:14}}>
+        <ProgressBar value={0.32} tone="violet" label="block progress" />
+        <ProgressBar value={0.6} tone="teal" label="network speed" />
+        <ProgressBar value={0.86} tone="ink" label="progress" />
+      </div>
+    </div>
+    <div style={{display:'flex',justifyContent:'space-between'}}>
+      <DataReadout align="left" lines={['Rung 80: solved 2026-10-24','Wall time: ~31 min','Drew 1.19x expected']} />
+      <DataReadout heading="Current challenge" tone="violet" lines={['Rung 96','Status: in progress','Window: 2026-10-26 UTC']} />
+    </div>
+  </div>);
+</script></body></html>
