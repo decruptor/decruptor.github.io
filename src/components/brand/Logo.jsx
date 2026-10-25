@@ -8,7 +8,7 @@ export function Logo({ size = 41.07, color = 'var(--ink-900)', markColor = 'var(
     <span aria-label="Decruptor" style={{ display: 'inline-flex', alignItems: 'flex-end', gap: size * 0.28, lineHeight: 1, ...style }}>
       <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: size, lineHeight: 1, letterSpacing: 'var(--ls-logo)', textTransform: 'uppercase', color, whiteSpace: 'nowrap' }}>Decruptor</span>
       {mark && (
-        <svg width={size * 0.889} height={size * 0.741} viewBox={MARK_VB} aria-hidden="true" style={{ color: markColor, flexShrink: 0, marginBottom: size * 0.0 }}>
+        <svg width={size * 0.889} height={size * 0.741} viewBox={MARK_VB} aria-hidden="true" style={{ color: markColor, flexShrink: 0, marginBottom: size * 0.1 }}>
           <path d={MARK_D} fill="currentColor" fillRule="evenodd" />
         </svg>
       )}
