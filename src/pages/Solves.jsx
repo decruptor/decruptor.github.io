@@ -8,7 +8,7 @@ function SolvesScreen({ go }) {
     ['Discrete log kappa', '0x27f35e126a10e6e7d3d4', true],
     ['Solved', '2026-10-24, ~15:37 UTC', true],
     ['Method', 'Parallel Pollard rho with distinguished points, full range (the ladder cards are not interval-restricted)'],
-    ['Hardware', 'One consumer-class GPU'],
+    ['Hardware', 'One RTX PRO 6000-class workstation GPU (rented cloud instance)'],
     ['Verification file', <a href="https://github.com/decruptor/ecdlp-ladder" style={LINK}>result_80.json</a>],
   ];
   return (

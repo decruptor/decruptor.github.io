@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Decruptor</title>
+  <script>
+    // The site is a hash-routed single page. GitHub Pages serves this file for
+    // any unknown path; map known page paths to their hash routes and forward.
+    (function () {
+      var pages = ['home', 'solves', 'research', 'recovery', 'about'];
+      var seg = (location.pathname || '/').replace(/^\/+|\/+$/g, '').split('/')[0];
+      var target = '/#home';
+      if (pages.indexOf(seg) !== -1) target = '/#' + seg;
+      location.replace(location.origin + target);
+    })();
+  </script>
+</head>
+<body style="font-family: system-ui, sans-serif; color: #333; padding: 2rem;">
+  <p>Redirecting&hellip; If nothing happens, go to
+    <a href="/">decruptor.github.io</a>.</p>
+</body>
+</html>

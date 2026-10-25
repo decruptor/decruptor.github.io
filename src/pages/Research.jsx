@@ -30,6 +30,17 @@ function ResearchScreen() {
         </div>
       </section>
       <section style={{ padding: '160px 120px 0', display: 'flex', flexDirection: 'column', gap: 56 }}>
+        <h2 style={H_SECTION}>Lab notes</h2>
+        <p style={{ ...BODY, maxWidth: 895 }}>Short write-ups from the campaign’s negative results and methods lessons, published as plain markdown, exactly as written.</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0,1fr))', gap: 40 }}>
+          <Step index="[ 1 ]" title="A silent miscompile on new GPU hardware" description="Case study of a CUDA 13.0 sm_120 compiler bug that corrupts shuffle-vs-constant ternaries silently at the SASS level — and why CPU-reference bit-compare gates must precede trusting any GPU counter." action={<Tag href="/labnotes/a-silent-miscompile.md">Read note →</Tag>} />
+          <Step index="[ 2 ]" title="The keys don’t talk" description="All 83 publicly solved keys of the 256-output Bitcoin puzzle re-verified from on-chain ground truth (count date-stamped 2026-10-25) and shown consistent with independent uniform draws; LCG, xorshift, xorshift128+ and java.util.Random all rejected under positive controls." action={<Tag href="/labnotes/the-keys-dont-talk.md">Read note →</Tag>} />
+          <Step index="[ 3 ]" title="No shared salt" description="A puzzle operator’s pre-launch SHA-256(salt+answer) commitment verified end-to-end on two independent puzzles; the shared-salt offline-oracle hypothesis tested and dead — with what a future salt leak would instantly enable." action={<Tag href="/labnotes/no-shared-salt.md">Read note →</Tag>} />
+          <Step index="[ 4 ]" title="Sealed: exhausting the Ballet generator space" description="~2.1e11 control-verified seed-variant tests across the timestamp/counter space found no generator behind the card passphrases — the lane is sealed, with the second-card caveat stated plainly." action={<Tag href="/labnotes/sealed-ballet-generator-space.md">Read note →</Tag>} />
+          <Step index="[ 5 ]" title="Table saturation that wasn’t" description="Methods post-mortem: one 1.5-second host-poll artifact produced two wrong “pathology” diagnoses in a GPU solver — instrument your own solver before believing its counters." action={<Tag href="/labnotes/table-saturation-that-wasnt.md">Read note →</Tag>} />
+        </div>
+      </section>
+      <section style={{ padding: '160px 120px 0', display: 'flex', flexDirection: 'column', gap: 56 }}>
         <h2 style={H_SECTION}>Tools</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0,1fr))', gap: 40 }}>
           <Step index="[ 1 ]" title="calculator" description="Public feasibility calculator for key-space sizes: what is searchable, at what cost, on what hardware. 25/25 tests passing." action={<Tag href={GH + '/calculator'}>Open repository →</Tag>} />

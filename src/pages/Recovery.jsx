@@ -26,7 +26,7 @@ function RecoveryScreen() {
         <Skyline tone="violet" preset="city" />
         <Band tone="violet" innerStyle={{ display: 'flex', flexDirection: 'column', gap: 32, alignItems: 'flex-start' }}>
           <span style={{ ...LABEL, color: 'var(--violet-700)' }}>Why we publish this</span>
-          <p style={{ ...LEAD, maxWidth: 1040 }}>The recovery-scam layer is now bigger than the loss itself — over ten thousand FBI-reported complaints in 2025, roughly $1.4B taken from people who had already lost money once.</p>
+          <p style={{ ...LEAD, maxWidth: 1040 }}>The recovery-scam layer is now bigger than the loss itself — the FBI logged <a href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" style={LINK}>10,516 “recovery scam” complaints in 2025, roughly $1.4B in reported losses</a> (IC3 2025 Internet Crime Report, “Complaints Involving Cryptocurrency — Recovery Scams”), taken from people who had already lost money once.</p>
           <p style={{ ...BODY, maxWidth: 895 }}>The best defense we know of is an informed owner, and the only credential we can offer is our public track record: every technical claim on this site is checkable from public artifacts.</p>
           <Tag tone="ink">Evidence class: published</Tag>
         </Band>
