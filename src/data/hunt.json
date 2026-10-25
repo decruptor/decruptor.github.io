@@ -1,0 +1,2467 @@
+{
+ "generated": "2026-10-25",
+ "as_of": "2026-10-25",
+ "sources": {
+  "rungs": "analytics/btc_puzzle_state.csv",
+  "events": "analytics/solves.csv",
+  "economy": "analytics/PUZZLE-ECONOMY.md",
+  "ladder": "publish-kit/repo-ladder/result_{48,64,80}.json"
+ },
+ "headline": {
+  "pool_btc": 903,
+  "pool_addresses": 77,
+  "kangaroo_btc": 75,
+  "kangaroo_share_pct": 8.3,
+  "blind_btc": 828,
+  "frontier_bits_per_year": 3.78,
+  "frontier_se": 0.43,
+  "forecast_140_year": 2027.9,
+  "forecast_140_band": "2027.7-2028.4",
+  "caveat": "These are estimates, not predictions: the pace is set by whether fleets of about 200 consumer GPUs keep forming — the one publicly documented operator of such a fleet solved puzzle 135 in July 2026 at a ~3× lucky draw and publicly retired."
+ },
+ "counts": {
+  "solved": 83,
+  "pubkey": 5,
+  "blind": 72,
+  "unfunded": 96
+ },
+ "rungs": [
+  {
+   "n": 1,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 2,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 3,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 4,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 5,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 6,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 7,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 8,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 9,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 10,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 11,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 12,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 13,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 14,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 15,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 16,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 17,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 18,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 19,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 20,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 21,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 22,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 23,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 24,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 25,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 26,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 27,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 28,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 29,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 30,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 31,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 32,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 33,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 34,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 35,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 36,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 37,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 38,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 39,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 40,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 41,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 42,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 43,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 44,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 45,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 46,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 47,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 48,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 49,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 50,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2015,
+   "state": "solved"
+  },
+  {
+   "n": 51,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2017,
+   "state": "solved"
+  },
+  {
+   "n": 52,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2017,
+   "state": "solved"
+  },
+  {
+   "n": 53,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2017,
+   "state": "solved"
+  },
+  {
+   "n": 54,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2017,
+   "state": "solved"
+  },
+  {
+   "n": 55,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2018,
+   "state": "solved"
+  },
+  {
+   "n": 56,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2018,
+   "state": "solved"
+  },
+  {
+   "n": 57,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2018,
+   "state": "solved"
+  },
+  {
+   "n": 58,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2018,
+   "state": "solved"
+  },
+  {
+   "n": 59,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 60,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 61,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 62,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 63,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 64,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2022,
+   "state": "solved"
+  },
+  {
+   "n": 65,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 66,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2024,
+   "state": "solved"
+  },
+  {
+   "n": 67,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2025,
+   "state": "solved"
+  },
+  {
+   "n": 68,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2025,
+   "state": "solved"
+  },
+  {
+   "n": 69,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": false,
+   "claim_year": 2025,
+   "state": "solved"
+  },
+  {
+   "n": 70,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 71,
+   "prize_btc": 7.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 72,
+   "prize_btc": 7.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 73,
+   "prize_btc": 7.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 74,
+   "prize_btc": 7.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 75,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 76,
+   "prize_btc": 7.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 77,
+   "prize_btc": 7.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 78,
+   "prize_btc": 7.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 79,
+   "prize_btc": 7.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 80,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 81,
+   "prize_btc": 8.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 82,
+   "prize_btc": 8.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 83,
+   "prize_btc": 8.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 84,
+   "prize_btc": 8.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 85,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 86,
+   "prize_btc": 8.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 87,
+   "prize_btc": 8.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 88,
+   "prize_btc": 8.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 89,
+   "prize_btc": 8.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 90,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 91,
+   "prize_btc": 9.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 92,
+   "prize_btc": 9.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 93,
+   "prize_btc": 9.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 94,
+   "prize_btc": 9.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 95,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 96,
+   "prize_btc": 9.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 97,
+   "prize_btc": 9.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 98,
+   "prize_btc": 9.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 99,
+   "prize_btc": 9.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 100,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 101,
+   "prize_btc": 10.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 102,
+   "prize_btc": 10.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 103,
+   "prize_btc": 10.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 104,
+   "prize_btc": 10.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 105,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2019,
+   "state": "solved"
+  },
+  {
+   "n": 106,
+   "prize_btc": 10.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 107,
+   "prize_btc": 10.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 108,
+   "prize_btc": 10.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 109,
+   "prize_btc": 10.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 110,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2020,
+   "state": "solved"
+  },
+  {
+   "n": 111,
+   "prize_btc": 11.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 112,
+   "prize_btc": 11.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 113,
+   "prize_btc": 11.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 114,
+   "prize_btc": 11.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 115,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2020,
+   "state": "solved"
+  },
+  {
+   "n": 116,
+   "prize_btc": 11.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 117,
+   "prize_btc": 11.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 118,
+   "prize_btc": 11.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 119,
+   "prize_btc": 11.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 120,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2023,
+   "state": "solved"
+  },
+  {
+   "n": 121,
+   "prize_btc": 12.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 122,
+   "prize_btc": 12.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 123,
+   "prize_btc": 12.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 124,
+   "prize_btc": 12.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 125,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2023,
+   "state": "solved"
+  },
+  {
+   "n": 126,
+   "prize_btc": 12.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 127,
+   "prize_btc": 12.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 128,
+   "prize_btc": 12.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 129,
+   "prize_btc": 12.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 130,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2024,
+   "state": "solved"
+  },
+  {
+   "n": 131,
+   "prize_btc": 13.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 132,
+   "prize_btc": 13.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 133,
+   "prize_btc": 13.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 134,
+   "prize_btc": 13.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 135,
+   "prize_btc": 0,
+   "solved": true,
+   "claimed": true,
+   "pubkey_known": true,
+   "claim_year": 2026,
+   "state": "solved"
+  },
+  {
+   "n": 136,
+   "prize_btc": 13.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 137,
+   "prize_btc": 13.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 138,
+   "prize_btc": 13.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 139,
+   "prize_btc": 13.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 140,
+   "prize_btc": 14,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": true,
+   "claim_year": null,
+   "state": "pubkey"
+  },
+  {
+   "n": 141,
+   "prize_btc": 14.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 142,
+   "prize_btc": 14.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 143,
+   "prize_btc": 14.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 144,
+   "prize_btc": 14.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 145,
+   "prize_btc": 14.5,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": true,
+   "claim_year": null,
+   "state": "pubkey"
+  },
+  {
+   "n": 146,
+   "prize_btc": 14.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 147,
+   "prize_btc": 14.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 148,
+   "prize_btc": 14.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 149,
+   "prize_btc": 14.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 150,
+   "prize_btc": 15,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": true,
+   "claim_year": null,
+   "state": "pubkey"
+  },
+  {
+   "n": 151,
+   "prize_btc": 15.1,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 152,
+   "prize_btc": 15.2,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 153,
+   "prize_btc": 15.3,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 154,
+   "prize_btc": 15.4,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 155,
+   "prize_btc": 15.5,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": true,
+   "claim_year": null,
+   "state": "pubkey"
+  },
+  {
+   "n": 156,
+   "prize_btc": 15.6,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 157,
+   "prize_btc": 15.7,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 158,
+   "prize_btc": 15.8,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 159,
+   "prize_btc": 15.9,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "blind"
+  },
+  {
+   "n": 160,
+   "prize_btc": 16,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": true,
+   "claim_year": null,
+   "state": "pubkey"
+  },
+  {
+   "n": 161,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 162,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 163,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 164,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 165,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 166,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 167,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 168,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 169,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 170,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 171,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 172,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 173,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 174,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 175,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 176,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 177,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 178,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 179,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 180,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 181,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 182,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 183,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 184,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 185,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 186,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 187,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 188,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 189,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 190,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 191,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 192,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 193,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 194,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 195,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 196,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 197,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 198,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 199,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 200,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 201,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 202,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 203,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 204,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 205,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 206,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 207,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 208,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 209,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 210,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 211,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 212,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 213,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 214,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 215,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 216,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 217,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 218,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 219,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 220,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 221,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 222,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 223,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 224,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 225,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 226,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 227,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 228,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 229,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 230,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 231,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 232,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 233,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 234,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 235,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 236,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 237,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 238,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 239,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 240,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 241,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 242,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 243,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 244,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 245,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 246,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 247,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 248,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 249,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 250,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 251,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 252,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 253,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 254,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 255,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  },
+  {
+   "n": 256,
+   "prize_btc": 0,
+   "solved": false,
+   "claimed": false,
+   "pubkey_known": false,
+   "claim_year": null,
+   "state": "unfunded"
+  }
+ ],
+ "series": [
+  {
+   "series": "certicom-ECCp-109",
+   "events": 1,
+   "first": "2002-04-15",
+   "last": "2002-04-15"
+  },
+  {
+   "series": "certicom-ECC2-109",
+   "events": 1,
+   "first": "2004-04-08",
+   "last": "2004-04-08"
+  },
+  {
+   "series": "btc-puzzle",
+   "events": 83,
+   "first": "2015-01-15",
+   "last": "2026-07-28"
+  },
+  {
+   "series": "binary-117-FPGA",
+   "events": 1,
+   "first": "2016-12-02",
+   "last": "2016-12-02"
+  },
+  {
+   "series": "bn-114",
+   "events": 1,
+   "first": "2017-08-23",
+   "last": "2017-08-23"
+  },
+  {
+   "series": "teikhos",
+   "events": 1,
+   "first": "2026-06-21",
+   "last": "2026-06-21"
+  },
+  {
+   "series": "luckylurker",
+   "events": 1,
+   "first": "2026-08-17",
+   "last": "2026-08-17"
+  },
+  {
+   "series": "zden",
+   "events": 1,
+   "first": "2026-09-22",
+   "last": "2026-09-22"
+  },
+  {
+   "series": "andy-bauch",
+   "events": 1,
+   "first": "2026-09-25",
+   "last": "2026-09-25"
+  },
+  {
+   "series": "proofofsolve",
+   "events": 3,
+   "first": "2026-10-15",
+   "last": "2026-10-25"
+  },
+  {
+   "series": "caesarcoder",
+   "events": 1,
+   "first": "2026-10-17",
+   "last": "2026-10-17"
+  },
+  {
+   "series": "arxiv-2508.14011-ladder",
+   "events": 9,
+   "first": "2026-10-24",
+   "last": "2026-10-24"
+  },
+  {
+   "series": "certicom-ECC2K-108",
+   "events": 1,
+   "first": null,
+   "last": null
+  },
+  {
+   "series": "coin-artist-torched-h34r7s",
+   "events": 1,
+   "first": null,
+   "last": null
+  },
+  {
+   "series": "gsmg-io",
+   "events": 1,
+   "first": null,
+   "last": null
+  },
+  {
+   "series": "koblitz-113-FPGA",
+   "events": 1,
+   "first": null,
+   "last": null
+  },
+  {
+   "series": "rushwallet",
+   "events": 1,
+   "first": null,
+   "last": null
+  },
+  {
+   "series": "secp112r1-full-DLP",
+   "events": 1,
+   "first": null,
+   "last": null
+  }
+ ],
+ "ladder": [
+  {
+   "bits": 48,
+   "kappa_hex": "0x142b32783630",
+   "time_s": 1,
+   "date": "2026-10-24",
+   "method": "parallel Pollard rho (DP, OpenMP C, Montgomery)"
+  },
+  {
+   "bits": 64,
+   "kappa_hex": "0xfc14e401202418fd",
+   "time_s": 395.2,
+   "date": "2026-10-24",
+   "method": "parallel Pollard rho (DP, OpenMP C, Montgomery 128-bit)"
+  },
+  {
+   "bits": 80,
+   "kappa_hex": "0x27f35e126a10e6e7d3d4",
+   "time_s": 1862.3,
+   "date": "2026-10-24",
+   "method": "parallel Pollard rho (DP, CUDA, Montgomery 128-bit, warp batch inversion), 1 of 3 independent workers (seed 11); expected 1.37e12 ops, realized 1.19x"
+  }
+ ]
+}

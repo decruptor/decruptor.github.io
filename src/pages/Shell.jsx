@@ -7,7 +7,7 @@ const LABEL = { fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: 20, l
 const LINK = { color: 'var(--blue-600)', textDecoration: 'underline', textUnderlineOffset: 3, textDecorationThickness: 1 };
 const GH = 'https://github.com/decruptor';
 
-const PAGES = [['home', 'Home'], ['solves', 'Solves'], ['research', 'Research'], ['recovery', 'Recovery'], ['about', 'About']];
+const PAGES = [['home', 'Home'], ['solves', 'Solves'], ['hunt', 'Hunt'], ['research', 'Research'], ['recovery', 'Recovery'], ['about', 'About']];
 
 function SiteHeader({ page, go }) {
   const { Logo, PixelPlus } = window.DS;

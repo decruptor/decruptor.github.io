@@ -1,6 +1,7 @@
 function HomeScreen({ go }) {
   const { Button, Skyline, Band, Step, DataReadout, Tag } = window.DS;
   const recent = [
+    ['2026-10-25', 'State of the Hunt: the public puzzle economy, measured', 'hunt'],
     ['2026-10-24', 'Rung 80 solved and published', 'solves'],
     ['2026-10-24', 'SOTA walk-constants paper submitted to IACR ePrint', 'research'],
     ['2026-10-25', 'Wallet-recovery scam checklist and AI/GPU capability benchmark published', 'recovery'],
