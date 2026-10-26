@@ -15,7 +15,7 @@ function HomeScreen({ go }) {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 46, alignItems: 'flex-end' }}>
           <DataReadout lines={['Rung 80: solved 2026-10-24', 'Verified: GPU + CPU replay', 'ePrint: 2026/112804']} />
-          <DataReadout heading="Current challenge" tone="violet" lines={['Rung 96: in progress', 'Window: 2026-10-26 UTC']} />
+          <DataReadout heading="Latest result" tone="teal" lines={['Rung 96: solved 2026-10-26', '47.2e12 ops · 13,280 s · verified twice']} />
         </div>
       </section>
 
