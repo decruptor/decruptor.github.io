@@ -2468,7 +2468,7 @@
    "kappa_hex": "0xd80a4bdb34ee0494d6543463",
    "time_s": 13280.1,
    "date": "2026-10-26",
-   "method": "parallel Pollard rho v6 (DP, CUDA, Montgomery 128-bit, endomorphism x2.2, warp batch inversion), 1 of 12 independent workers (seed 3504); expected 3.2e14 ops, realized 1.48x"
+   "method": "parallel Pollard rho v6 (DP, CUDA, Montgomery 128-bit, endomorphism x2.2, warp batch inversion), 1 of 12 independent workers (seed 3504); expected 3.518e14 ops, realized 0.13x"
   }
  ]
 }
