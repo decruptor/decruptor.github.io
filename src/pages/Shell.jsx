@@ -63,7 +63,7 @@ function RungStatus({ status = 'in-progress', go }) {
       <div style={{ display: 'flex', flexDirection: 'column', gap: 24, alignItems: 'flex-start' }}>
         <Badge tone="teal" mark>Solved</Badge>
         <h2 style={H_SECTION}>Rung 96</h2>
-        <p style={{ ...BODY, maxWidth: 560 }}>Solved 2026-10-26. κ = 0xd80a4bdb34ee0494d6543463 — 47.2×10¹² group operations in 13,280 s (3.56 Gops/s) on one RTX 4090 of a 12-worker fleet, 1.48× the expected cost. Same two-channel verification as rung 80; check P = [κ]·Q yourself in ten lines of Python.</p>
+        <p style={{ ...BODY, maxWidth: 560 }}>Solved 2026-10-26. κ = 0xd80a4bdb34ee0494d6543463 — 47.2×10¹² group operations in 13,280 s (3.56 Gops/s) on one RTX 4090 of a 12-worker fleet, 0.13× the expected cost. Same two-channel verification as rung 80; check P = [κ]·Q yourself in ten lines of Python.</p>
         {go && <Button variant="violet" onClick={() => go('solves')}>See the rung 80 record</Button>}
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 20, alignItems: 'flex-end' }}>
