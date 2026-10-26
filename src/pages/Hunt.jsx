@@ -36,8 +36,7 @@ function HuntScreen() {
   const fmtTime = (s) => (s >= 100 ? Math.round(s).toLocaleString('en-US') : s) + ' s';
   const ladderRows = [
     ...d.ladder.map((r) => ['Rung ' + r.bits + ' · secp' + r.bits + 'k1', 'κ = ' + r.kappa_hex + ' · ' + fmtTime(r.time_s) + ' · ' + r.date, true]),
-    ['Rung 96 · secp96k1', 'In progress.', false],
-    ['Verification files', <a href={GH + '/ecdlp-ladder'} style={LINK}>github.com/decruptor/ecdlp-ladder — result_48.json, result_64.json, result_80.json</a>],
+    ['Verification files', <a href={GH + '/ecdlp-ladder'} style={LINK}>github.com/decruptor/ecdlp-ladder — result_48.json, result_64.json, result_80.json, result_96.json</a>],
   ];
 
   const th = { ...L, fontSize: 12, color: 'var(--teal-700)', padding: '14px 16px 14px 0', borderBottom: '1px solid var(--ink-20)', textAlign: 'left' };

@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-25",
+ "generated": "2026-10-26",
  "as_of": "2026-10-25",
  "sources": {
   "rungs": "analytics/btc_puzzle_state.csv",
   "events": "analytics/solves.csv",
   "economy": "analytics/PUZZLE-ECONOMY.md",
-  "ladder": "publish-kit/repo-ladder/result_{48,64,80}.json"
+  "ladder": "publish-kit/repo-ladder/result_{48,64,80,96}.json"
  },
  "headline": {
   "pool_btc": 903,
@@ -2400,9 +2400,9 @@
   },
   {
    "series": "arxiv-2508.14011-ladder",
-   "events": 9,
+   "events": 10,
    "first": "2026-10-24",
-   "last": "2026-10-24"
+   "last": "2026-10-26"
   },
   {
    "series": "certicom-ECC2K-108",
@@ -2462,6 +2462,13 @@
    "time_s": 1862.3,
    "date": "2026-10-24",
    "method": "parallel Pollard rho (DP, CUDA, Montgomery 128-bit, warp batch inversion), 1 of 3 independent workers (seed 11); expected 1.37e12 ops, realized 1.19x"
+  },
+  {
+   "bits": 96,
+   "kappa_hex": "0xd80a4bdb34ee0494d6543463",
+   "time_s": 13280.1,
+   "date": "2026-10-26",
+   "method": "parallel Pollard rho v6 (DP, CUDA, Montgomery 128-bit, endomorphism x2.2, warp batch inversion), 1 of 12 independent workers (seed 3504); expected 3.2e14 ops, realized 1.48x"
   }
  ]
 }
