@@ -101,7 +101,7 @@ const series = [...seriesMap.entries()].map(([name, list]) => {
 }).sort((a, b) => (a.first || '9999').localeCompare(b.first || '9999') || a.series.localeCompare(b.series));
 
 // --- 4. our verified ladder records (kappa decimal must equal hex) ----------
-const ladderBits = [48, 64, 80];
+const ladderBits = [48, 64, 80, 96];
 const ladderEvents = new Map(
   events.filter((e) => e.series === 'arxiv-2508.14011-ladder').map((e) => [Number(e.size_bits), e])
 );
@@ -160,7 +160,7 @@ expect(headline.kangaroo_btc > 70 && headline.kangaroo_btc < 80, `kangaroo_btc o
 expect(counts.solved + counts.pubkey + counts.blind + counts.unfunded === 256, 'state counts must cover all 256 rungs');
 expect(counts.solved === 83 && counts.pubkey === 5, `unexpected state counts: ${JSON.stringify(counts)}`);
 expect(series.reduce((s, x) => s + x.events, 0) === events.length, 'series event counts must sum to all rows');
-expect(ladder.length === 3, 'expected 3 verified ladder records');
+expect(ladder.length === 4, 'expected 4 verified ladder records');
 
 const data = {
   generated: new Date().toISOString().slice(0, 10),
@@ -169,7 +169,7 @@ const data = {
     rungs: 'analytics/btc_puzzle_state.csv',
     events: 'analytics/solves.csv',
     economy: 'analytics/PUZZLE-ECONOMY.md',
-    ladder: 'publish-kit/repo-ladder/result_{48,64,80}.json',
+    ladder: 'publish-kit/repo-ladder/result_{48,64,80,96}.json',
   },
   headline,
   counts,

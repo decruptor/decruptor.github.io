@@ -61,14 +61,14 @@ function RungStatus({ status = 'in-progress', go }) {
   return (
     <section style={{ padding: '0 120px', display: 'grid', gridTemplateColumns: 'minmax(0,1fr) auto', gap: 48, alignItems: 'end' }}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 24, alignItems: 'flex-start' }}>
-        <Badge tone={solved ? 'teal' : 'violet'} mark>{solved ? 'Solved' : 'Current challenge'}</Badge>
+        <Badge tone="teal" mark>Solved</Badge>
         <h2 style={H_SECTION}>Rung 96</h2>
-        <p style={{ ...BODY, maxWidth: 560 }}>In progress. This line fills on completion with the same record format as rung 80: curve parameters, κ, method, hardware, wall time, verification file, and the same ten-line check.</p>
+        <p style={{ ...BODY, maxWidth: 560 }}>Solved 2026-10-26. κ = 0xd80a4bdb34ee0494d6543463 — 47.2×10¹² group operations in 13,280 s (3.56 Gops/s) on one RTX 4090 of a 12-worker fleet, 1.48× the expected cost. Same two-channel verification as rung 80; check P = [κ]·Q yourself in ten lines of Python.</p>
         {go && <Button variant="violet" onClick={() => go('solves')}>See the rung 80 record</Button>}
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 20, alignItems: 'flex-end' }}>
-        <BlockRow count={5} size={64} gap={6} filled={solved ? [0, 1, 2, 3, 4] : [0]} />
-        <DataReadout heading="Status" tone="violet" lines={[solved ? 'Solved' : 'In progress', 'First-kappa window: 2026-10-26 UTC']} />
+        <BlockRow count={5} size={64} gap={6} filled={[0, 1, 2, 3, 4]} />
+        <DataReadout heading="Status" tone="teal" lines={['Solved 2026-10-26', 'Verified: GPU + CPU replay, two machines']} />
       </div>
     </section>
   );
