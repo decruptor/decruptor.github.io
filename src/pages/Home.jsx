@@ -14,7 +14,7 @@ function HomeScreen({ go }) {
           <p style={{ ...BODY }}>Independent research on the computational side of lost cryptographic keys — elliptic-curve discrete logarithms, key-derivation forensics, and the public Bitcoin puzzle economy.</p>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 46, alignItems: 'flex-end' }}>
-          <DataReadout lines={['Rung 80: solved 2026-10-24', 'Verified: GPU + CPU replay', 'ePrint: 2026/112804']} />
+          <DataReadout lines={['Rung 80: solved 2026-10-24', 'Verified: GPU + CPU replay', 'ePrint: in moderation']} />
           <DataReadout heading="Latest result" tone="teal" lines={['Rung 96: solved 2026-10-26', '47.2e12 ops · 13,280 s · verified twice']} />
         </div>
       </section>
@@ -25,7 +25,7 @@ function HomeScreen({ go }) {
 
       <section style={{ padding: '96px 120px 0', display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0,1fr))', gap: 40 }}>
         <Step index="[ 1 ]" title="Rung 80, solved" description="First classical solve on the “Brace for impact” ECDLP ladder (October 2026), verified independently twice." action={<Button variant="ink" size="md" onClick={() => go('solves')}>The record</Button>} />
-        <Step index="[ 2 ]" title="Walk-constants paper" description="On the walk constants behind the fastest public ECDLP solvers — submitted to IACR ePrint, October 2026." action={<Tag tone="blue">ePrint 2026/112804 · pending</Tag>} />
+        <Step index="[ 2 ]" title="Walk-constants paper" description="On the walk constants behind the fastest public ECDLP solvers — submitted to IACR ePrint, October 2026." action={<Tag tone="blue">IACR ePrint · in moderation</Tag>} />
         <Step index="[ 3 ]" title="Open tooling" description="Open-source tooling and verification artifacts for everything we claim." action={<Tag tone="teal" href="https://github.com/decruptor">github.com/decruptor</Tag>} />
       </section>
 

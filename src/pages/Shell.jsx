@@ -26,6 +26,7 @@ function SiteHeader({ page, go }) {
             {page === id ? '[ ' + label + ' ]' : label}
           </a>
         ))}
+        <a href="/calculator/" style={{ ...SG, color: 'var(--teal-600)', textDecoration: 'none' }}>Calculator ↗</a>
       </nav>
     </header>
   );

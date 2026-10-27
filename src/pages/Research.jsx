@@ -4,7 +4,7 @@ function ResearchScreen() {
     <main>
       <PageTitle eyebrow={<Badge mark>Paper 1</Badge>} title="Walk constants for interval ECDLP on secp256k1" intro="An empirical analysis of Pollard-kangaroo walk constants for interval ECDLP on secp256k1, including the unpublished SOTA family." />
       <section style={{ padding: '40px 120px 0', display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-        <Tag>IACR ePrint 2026/112804</Tag><Tag tone="violet">Pending moderation</Tag><Tag tone="ink">CC BY 4.0</Tag>
+        <Tag>IACR ePrint · submitted</Tag><Tag tone="violet">Pending moderation</Tag><Tag tone="ink">CC BY 4.0</Tag>
       </section>
       <section style={{ padding: '96px 222px 0', display: 'flex', flexDirection: 'column', gap: 32 }}>
         <p style={LEAD}>The kangaroo method solves the discrete logarithm problem in an interval of width W at cost K·√W, and the constant K is the entire practical difference between methods.</p>
@@ -43,7 +43,7 @@ function ResearchScreen() {
       <section style={{ padding: '160px 120px 0', display: 'flex', flexDirection: 'column', gap: 56 }}>
         <h2 style={H_SECTION}>Tools</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0,1fr))', gap: 40 }}>
-          <Step index="[ 1 ]" title="calculator" description="Public feasibility calculator for key-space sizes: what is searchable, at what cost, on what hardware. 25/25 tests passing." action={<Tag href={GH + '/calculator'}>Open repository →</Tag>} />
+          <Step index="[ 1 ]" title="calculator" description="Cost, GPU-hours and expected value for all 256 Bitcoin puzzles, priced on your own hardware and prices. Runs in the browser, offline, no trackers. 25/25 tests passing." action={<div style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}><Tag tone="violet" href="/calculator/">Open calculator →</Tag><Tag href={GH + '/calculator'}>Code →</Tag></div>} />
           <Step index="[ 2 ]" title="ecdlp-ladder" description="Verification artifacts for the ladder solves (result files, validation log)." action={<Tag href={GH + '/ecdlp-ladder'}>Open repository →</Tag>} />
           <Step index="[ 3 ]" title="kangaroo-constants" description="Data and sources behind Paper 1." action={<Tag href={GH + '/kangaroo-constants'}>Open repository →</Tag>} />
         </div>
