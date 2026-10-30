@@ -10,7 +10,7 @@
 //   analytics/PUZZLE-ECONOMY.md      — fitted pace, forecast, caveat sentences
 //   publish-kit/repo-ladder/result_*.json — our verified ladder records
 
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -162,9 +162,23 @@ expect(counts.solved === 83 && counts.pubkey === 5, `unexpected state counts: ${
 expect(series.reduce((s, x) => s + x.events, 0) === events.length, 'series event counts must sum to all rows');
 expect(ladder.length === 4, 'expected 4 verified ladder records');
 
+// --- fleet / search-progress snapshot --------------------------------------
+// analytics/pool-stats.json is refreshed out-of-band (refresh-pool-stats.sh)
+// from the real GPU rate and the live distinguished-point count, so the
+// published numbers track reality without hand-editing the page. The page
+// derives the phone-equivalents, odds and banked-work figures from these.
+let fleet = { gkps: 6.2, dp_count: 226421, dp_bits: 30, as_of };  // fallback snapshot
+if (existsSync(join(ROOT, 'analytics/pool-stats.json'))) {
+  const ps = JSON.parse(read('analytics/pool-stats.json'));
+  expect(ps.gkps > 0 && Number.isFinite(ps.dp_count) && ps.dp_count >= 0 && ps.dp_bits > 0,
+    `pool-stats.json: bad values ${JSON.stringify(ps)}`);
+  fleet = { gkps: ps.gkps, dp_count: ps.dp_count, dp_bits: ps.dp_bits, as_of: ps.as_of || as_of };
+}
+
 const data = {
   generated: new Date().toISOString().slice(0, 10),
   as_of,
+  fleet,
   sources: {
     rungs: 'analytics/btc_puzzle_state.csv',
     events: 'analytics/solves.csv',

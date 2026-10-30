@@ -1,6 +1,12 @@
 {
  "generated": "2026-10-30",
  "as_of": "2026-10-25",
+ "fleet": {
+  "gkps": 6.2,
+  "dp_count": 307440,
+  "dp_bits": 30,
+  "as_of": "2026-10-30"
+ },
  "sources": {
   "rungs": "analytics/btc_puzzle_state.csv",
   "events": "analytics/solves.csv",

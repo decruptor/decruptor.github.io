@@ -197,32 +197,44 @@ function events_total(series) {
   return series.reduce((s, x) => s + x.events, 0);
 }
 
-// Fleet snapshot, updated by hand when the fleet changes. GPU models, hosts and spend are not published.
+// Fleet snapshot — raw figures come from d.fleet (built from analytics/pool-stats.json,
+// refreshed from the live GPU rate + distinguished-point count). GPU models, hosts and spend are not published.
 const FLEET = (() => {
-  const gkps_num = 6.2;                     // GKeys/s, whole owned fleet
-  const as_of = '30 October 2026';
+  const f = (window.DS.hunt && window.DS.hunt.fleet) || { gkps: 6.2, dp_count: 226421, dp_bits: 30, as_of: '2026-10-30' };
+  const gkps_num = f.gkps;                   // GKeys/s, whole owned fleet
+  const as_of = new Date(f.as_of + 'T00:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
   const PHONE_GKPS = 0.0013;                // GKeys/s, one phone core
   const E = 9.6e20;                         // expected jumps for rung 140: 1.15 · 2^69.5
   const YEAR_S = 365.25 * 86400;
   const fmt = (n) => n.toLocaleString('en-US', { maximumSignificantDigits: 3 });
+  // compact notation keeps long values inside their stat column (a plain "26,700,000" overflows)
+  const compact = (n) => n >= 1e9 ? +(n / 1e9).toPrecision(3) + 'B'
+    : n >= 1e6 ? +(n / 1e6).toPrecision(3) + 'M'
+    : n >= 1e3 ? +(n / 1e3).toPrecision(3) + 'K' : String(Math.round(n));
+  const SUP = { '-': '⁻', 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹' };
+  const sci = (n) => {   // 2.43e14 -> "2.43×10¹⁴"
+    const e = Math.floor(Math.log10(n));
+    const m = +(n / Math.pow(10, e)).toPrecision(3);
+    return m + '×10' + String(e).split('').map((c) => SUP[c]).join('');
+  };
   const phones = gkps_num / PHONE_GKPS;
   // kangaroo is a collision search: P(T) ≈ 1 − exp(−0.9·(T/E)²), quadratic while T ≪ E
   const x = gkps_num * 1e9 * YEAR_S / E;
   const year_p = -Math.expm1(-0.9 * x * x);
   const median_s = Math.sqrt(Math.LN2 / 0.9) * E / (gkps_num * 1e9);
-  // Work banked so far — distinguished points accumulated in the search database (snapshot).
-  const dp_count = 226421;                   // distinguished points found so far
-  const dp_bits = 30;                        // ~2^30 jumps represented per distinguished point
+  // Work banked so far — distinguished points accumulated in the search database.
+  const dp_count = f.dp_count;               // distinguished points found so far
+  const dp_bits = f.dp_bits;                 // ~2^dp_bits jumps represented per distinguished point
   const jumps = dp_count * Math.pow(2, dp_bits);
   return {
     as_of,
     gkps: fmt(gkps_num),
     phones: fmt(Math.round(phones)),
     phone_years_per_day: fmt(Math.round(phones / 365.25)),
-    year_odds: fmt(Math.round(1 / year_p)),
+    year_odds: compact(Math.round(1 / year_p)),
     median_years: fmt(Math.round(median_s / YEAR_S)),
-    dps: dp_count.toLocaleString('en-US'),
-    jumps_banked: '2.43×10¹⁴',               // fmt(jumps) in scientific form
+    dps: dp_count.toLocaleString('en-US'),   // exact count
+    jumps_banked: sci(jumps),                // e.g. 2.43×10¹⁴
     pct_expected: (jumps / E * 100).toPrecision(2),   // ~0.000025 %
   };
 })();
