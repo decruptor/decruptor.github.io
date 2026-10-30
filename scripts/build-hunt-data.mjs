@@ -167,9 +167,13 @@ expect(ladder.length === 4, 'expected 4 verified ladder records');
 // from the real GPU rate and the live distinguished-point count, so the
 // published numbers track reality without hand-editing the page. The page
 // derives the phone-equivalents, odds and banked-work figures from these.
+// pool-stats.json lives in this repo (src/data/) so the CI build and the
+// decruptor-pool updater share one source. decruptor-pool patches it + hunt.json's
+// fleet block directly; the Mac's full build regenerates hunt.json from it.
+const POOL_STATS = resolve(HERE, '..', 'src', 'data', 'pool-stats.json');
 let fleet = { gkps: 6.2, dp_count: 226421, dp_bits: 30, as_of };  // fallback snapshot
-if (existsSync(join(ROOT, 'analytics/pool-stats.json'))) {
-  const ps = JSON.parse(read('analytics/pool-stats.json'));
+if (existsSync(POOL_STATS)) {
+  const ps = JSON.parse(readFileSync(POOL_STATS, 'utf8'));
   expect(ps.gkps > 0 && Number.isFinite(ps.dp_count) && ps.dp_count >= 0 && ps.dp_bits > 0,
     `pool-stats.json: bad values ${JSON.stringify(ps)}`);
   fleet = { gkps: ps.gkps, dp_count: ps.dp_count, dp_bits: ps.dp_bits, as_of: ps.as_of || as_of };
