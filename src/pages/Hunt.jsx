@@ -144,6 +144,27 @@ function HuntScreen() {
         </div>
       </section>
 
+      {/* (d.5) live fleet — the grind, in phone-equivalents */}
+      <section style={{ padding: '160px 120px 0', display: 'flex', flexDirection: 'column', gap: 40 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <h2 style={H_SECTION}>The grind, right now</h2>
+          <p style={{ ...BODY, maxWidth: 895 }}>Rung 140 is the target with a known public key. A solo fleet of GPUs works its interval around the clock; here is what that means in numbers anyone can feel. A snapshot as of {FLEET.as_of}, updated by hand when the fleet changes.</p>
+        </div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40 }}>
+          {[
+            <Stat key="r" value={FLEET.gkps} unit="GKeys / second" title="Grind rate" description="Kangaroo jump operations per second across the whole fleet." />,
+            <Stat key="p" value={FLEET.phones} unit="phone-equivalents" title="Phone equivalent" description="How many phones, each running one core at about 1.3 million jumps per second, it would take to match the fleet." />,
+            <Stat key="o" value={'1 in ' + FLEET.year_odds} unit="in the first year" title="First-year odds" description="Chance of landing rung 140 if the fleet runs unbroken for a year as one solver. Kangaroo odds grow with the square of the work done — P ≈ 1 − exp(−0.9·(T/E)²), E ≈ 9.6×10²⁰ jumps — so the early years are by far the hardest. This is why it is a lottery, not a schedule." />,
+            <Stat key="d" value={FLEET.median_years} unit="years" title="Median time to solve" description="Half of all runs at this rate would finish sooner, half later. Kangaroo jumps are a random walk, so this is a median, not a deadline — and it assumes no accumulated work is ever lost." />,
+          ].map((s) => <div key={s.key} style={{ flex: '1 1 240px', minWidth: 0 }}>{s}</div>)}
+        </div>
+        <Band tone="tint" innerStyle={{ display: 'flex', flexDirection: 'column', gap: 20, alignItems: 'flex-start', width: 'fit-content' }}>
+          <span style={{ ...LABEL, color: 'var(--violet-700)' }}>One day of grinding</span>
+          <div style={{ fontFamily: 'var(--font-data)', fontWeight: 500, fontSize: 28, color: 'var(--ink-900)' }}>{FLEET.phone_years_per_day} phone-years per day</div>
+          <p style={{ ...BODY, maxWidth: 895, fontSize: 16 }}>Every day, the fleet does as many key-jumps as a single phone would in {FLEET.phone_years_per_day} years. A top phone does about 1.3 million per second; the fleet does {FLEET.gkps} billion. And still, rung 140 is a multi-century lottery — the honest arithmetic above, not a countdown.</p>
+        </Band>
+      </section>
+
       {/* (e) provenance stamp + methodology */}
       <div style={{ marginTop: 120 }}>
         <Band tone="tint" innerStyle={{ display: 'flex', flexDirection: 'column', gap: 28, alignItems: 'flex-start' }}>
@@ -163,4 +184,27 @@ function HuntScreen() {
 function events_total(series) {
   return series.reduce((s, x) => s + x.events, 0);
 }
+
+// Fleet snapshot, updated by hand when the fleet changes. GPU models, hosts and spend are not published.
+const FLEET = (() => {
+  const gkps_num = 6.2;                     // GKeys/s, whole owned fleet
+  const as_of = '30 October 2026';
+  const PHONE_GKPS = 0.0013;                // GKeys/s, one phone core
+  const E = 9.6e20;                         // expected jumps for rung 140: 1.15 · 2^69.5
+  const YEAR_S = 365.25 * 86400;
+  const fmt = (n) => n.toLocaleString('en-US', { maximumSignificantDigits: 3 });
+  const phones = gkps_num / PHONE_GKPS;
+  // kangaroo is a collision search: P(T) ≈ 1 − exp(−0.9·(T/E)²), quadratic while T ≪ E
+  const x = gkps_num * 1e9 * YEAR_S / E;
+  const year_p = -Math.expm1(-0.9 * x * x);
+  const median_s = Math.sqrt(Math.LN2 / 0.9) * E / (gkps_num * 1e9);
+  return {
+    as_of,
+    gkps: fmt(gkps_num),
+    phones: fmt(Math.round(phones)),
+    phone_years_per_day: fmt(Math.round(phones / 365.25)),
+    year_odds: fmt(Math.round(1 / year_p)),
+    median_years: fmt(Math.round(median_s / YEAR_S)),
+  };
+})();
 window.HuntScreen = HuntScreen;

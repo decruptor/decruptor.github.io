@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26",
+ "generated": "2026-10-30",
  "as_of": "2026-10-25",
  "sources": {
   "rungs": "analytics/btc_puzzle_state.csv",
@@ -2461,14 +2461,14 @@
    "kappa_hex": "0x27f35e126a10e6e7d3d4",
    "time_s": 1862.3,
    "date": "2026-10-24",
-   "method": "parallel Pollard rho (DP, CUDA, Montgomery 128-bit, warp batch inversion), 1 of 3 independent workers (seed 11); expected 1.37e12 ops, realized 1.19x"
+   "method": "parallel Pollard rho (DP d=22, CUDA, Montgomery 128-bit, warp batch inversion), winner = 1 of 3 independent workers (seed 11); realized 1.07x the best-of-3 expectation with detection lag (1.53e12, merge-race model, paper section 7); bare single-worker reading 1.19x of 1.37e12"
   },
   {
    "bits": 96,
    "kappa_hex": "0xd80a4bdb34ee0494d6543463",
    "time_s": 13280.1,
    "date": "2026-10-26",
-   "method": "parallel Pollard rho v6 (DP, CUDA, Montgomery 128-bit, endomorphism x2.2, warp batch inversion), 1 of 12 independent workers (seed 3504); expected 3.518e14 ops, realized 0.13x"
+   "method": "parallel Pollard rho v6 (DP d=26, CUDA, Montgomery 128-bit, GLV endomorphism: 1.68x fewer walk steps at 1.34x per-step cost, warp batch inversion), winner = 1 of 12 independent workers (seed 3504); realized 0.13x the single-worker plain-walk expectation 3.518e14 = 0.23x endo-adjusted = 0.78x the expected best-of-12 draw (0.69x with detection lag)"
   }
  ]
 }
