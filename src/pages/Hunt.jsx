@@ -163,6 +163,18 @@ function HuntScreen() {
           <div style={{ fontFamily: 'var(--font-data)', fontWeight: 500, fontSize: 28, color: 'var(--ink-900)' }}>{FLEET.phone_years_per_day} phone-years per day</div>
           <p style={{ ...BODY, maxWidth: 895, fontSize: 16 }}>Every day, the fleet does as many key-jumps as a single phone would in {FLEET.phone_years_per_day} years. A top phone does about 1.3 million per second; the fleet does {FLEET.gkps} billion. And still, rung 140 is a multi-century lottery — the honest arithmetic above, not a countdown.</p>
         </Band>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 24 }}>
+          <h2 style={H_SECTION}>Work banked so far</h2>
+          <p style={{ ...BODY, maxWidth: 895 }}>The search accumulates distinguished points — the trail markers the kangaroo method records. Together they stand for the total work done; a solve is a match between two of them. Here is the search progress to date.</p>
+        </div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40 }}>
+          {[
+            <Stat key="dp" value={FLEET.dps} unit="distinguished points" title="Trail markers banked" description="Points recorded in the search database so far. A collision between any two of them recovers the key." />,
+            <Stat key="j" value={FLEET.jumps_banked} unit="kangaroo jumps" title="Work represented" description="Total key-jump operations the banked points stand for." />,
+            <Stat key="e" value={FLEET.pct_expected + ' %'} unit="of expected work" title="Fraction of the total" description={'Of the roughly 9.6×10²⁰ jumps rung 140 is expected to need. The number is tiny by design — it is why the odds above are a multi-century lottery, and why no work can ever be thrown away.'} />,
+          ].map((s) => <div key={s.key} style={{ flex: '1 1 240px', minWidth: 0 }}>{s}</div>)}
+        </div>
       </section>
 
       {/* (e) provenance stamp + methodology */}
@@ -198,6 +210,10 @@ const FLEET = (() => {
   const x = gkps_num * 1e9 * YEAR_S / E;
   const year_p = -Math.expm1(-0.9 * x * x);
   const median_s = Math.sqrt(Math.LN2 / 0.9) * E / (gkps_num * 1e9);
+  // Work banked so far — distinguished points accumulated in the search database (snapshot).
+  const dp_count = 226421;                   // distinguished points found so far
+  const dp_bits = 30;                        // ~2^30 jumps represented per distinguished point
+  const jumps = dp_count * Math.pow(2, dp_bits);
   return {
     as_of,
     gkps: fmt(gkps_num),
@@ -205,6 +221,9 @@ const FLEET = (() => {
     phone_years_per_day: fmt(Math.round(phones / 365.25)),
     year_odds: fmt(Math.round(1 / year_p)),
     median_years: fmt(Math.round(median_s / YEAR_S)),
+    dps: dp_count.toLocaleString('en-US'),
+    jumps_banked: '2.43×10¹⁴',               // fmt(jumps) in scientific form
+    pct_expected: (jumps / E * 100).toPrecision(2),   // ~0.000025 %
   };
 })();
 window.HuntScreen = HuntScreen;
